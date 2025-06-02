@@ -1,6 +1,7 @@
 import 'package:carrot_app/core/my_util.dart';
 import 'package:carrot_app/models/product.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class ListItem extends StatelessWidget {
   const ListItem({
@@ -30,8 +31,14 @@ class ListItem extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text("${p.title}"),
-                  Text("${p.address} • ${p.publishedAt}"),
+                  Text(
+                    "${p.title}",
+                    style: TextStyle(fontWeight: FontWeight.w600),
+                  ),
+                  Text(
+                    "${p.address} • ${p.publishedAt}",
+                    style: TextStyle(fontSize: 12, color: Colors.grey),
+                  ),
                   Text(
                     "${p.price.toMoney()}원",
                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),

@@ -7,6 +7,9 @@ class HomeDetailScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     print("HomeDetailScreen build");
     return Scaffold(
+      appBar: AppBar(
+        title: Text("detail"),
+      ),
       body: Center(child: Text("HomeDetailScreen")),
     );
   }
