@@ -70,8 +70,7 @@ class LifeBody extends StatelessWidget {
         children: [
           ImageContainer(
             borderRadius: 15,
-            imageUrl: neighborhoodLife.contentImgUri,
-            // profileImagUri는 이미지에러라 다른주소
+            imageUrl: neighborhoodLife.profileImgUri,
             width: 30,
             height: 30,
           ),
